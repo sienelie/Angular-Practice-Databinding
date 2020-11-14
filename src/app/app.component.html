@@ -1,0 +1,23 @@
+<hr>
+<label> Username </label>
+<input 
+      type="text" 
+      class="form-control"
+      [(ngModel)]="userName">
+<p>{{userName}}</p>
+
+<button
+      class="btn btn-primary"
+      [disabled]="!userName"
+      (click)="onCreateUser(userName)">Add User</button>
+<p>{{userCreationStatus}}</p>
+<hr>
+
+
+
+
+
+
+
+
+
